@@ -33,12 +33,13 @@ def equal():
         fin.set(int(x1.get())-int(x2.get()))
     elif(op.get()=="*"):
         fin.set(int(x1.get())*int(x2.get())) 
-    else:
+    elif(op.get()=="/"):
         fin.set(int(x1.get())/int(x2.get())) 
 def cancel():
-    x1=StringVar()
-    x2=StringVar()
-    fin=StringVar()
+    x1.set('')
+    x2.set('')
+    fin.set('')
+    op.set('')
 
 
 
